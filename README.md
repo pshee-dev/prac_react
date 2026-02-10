@@ -6,7 +6,7 @@
 - [x] React JS #2 설치(create-react-app)
 - [x] React JS #3 컴포넌트, JSX
 - [x] React JS #4 첫 컴포넌트 만들기
-- [ ] React JS #5 CSS 작성법(module css)
+- [x] React JS #5 CSS 작성법(module css)
 - [ ] React JS #6 이벤트 처리(Handling Events)
 - [ ] React JS #7 state, useState
 - [ ] React JS #8 props
