@@ -7,7 +7,7 @@
 - [x] React JS #3 컴포넌트, JSX
 - [x] React JS #4 첫 컴포넌트 만들기
 - [x] React JS #5 CSS 작성법(module css)
-- [ ] React JS #6 이벤트 처리(Handling Events)
+- [x] React JS #6 이벤트 처리(Handling Events)
 - [ ] React JS #7 state, useState
 - [ ] React JS #8 props
 - [ ] React JS #9 더미 데이터 구현, map() 반복문

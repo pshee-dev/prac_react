@@ -1,27 +1,30 @@
-// const Hello = function() {
-//     <h1>Hello</h1>;
-// };
-
-// export default Hello;
-
-import World from "./World";
-import styles from "./Hello.module.css"
-
 export default function Hello() {
+    function showName() {
+        console.log("name");
+    }
+
+    function showAge(age) {
+        console.log(age);
+    }
+
+    function showText(txt) {
+        console.log(txt);
+    }
+
     return (
         <div>
-            <h1 style={
-                {
-                    color: "#f00",
-                    borderRight: "2px solid #000",
-                    marginBottom: "50px",
-                    opacity: 0.5
+            <h1>Hello</h1>
+            <button onClick={showName}>Show name</button>
+            <button 
+                onClick={() => {
+                    console.log(30);
+                    showAge(20);
                 }
-            }>Hello</h1>
-            {/* 컴포넌트 내부에서 새로운 컴포넌트를 사용할 때는 태그(div)로 감싸주어야 함 */}
-            <World />        
-            <World />        
-            <div className={styles.box}>Hello</div>
+            }>Show age</button>
+            <input type="text" onChange={e => {
+                const txt = e.target.value;
+                showText(txt);
+            }} />
         </div>
     );
 }
