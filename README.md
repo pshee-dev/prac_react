@@ -10,7 +10,7 @@
 - [x] React JS #6 이벤트 처리(Handling Events)
 - [x] React JS #7 state, useState
 - [x] React JS #8 props
-- [ ] React JS #9 더미 데이터 구현, map() 반복문
+- [x] React JS #9 더미 데이터 구현, map() 반복문
 - [ ] React JS #10 라우터 구현 react-router-dom
 - [ ] React JS #11 json-server, REST API
 - [ ] React JS #12 useEffect, fetch()로 API 호출
