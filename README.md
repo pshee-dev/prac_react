@@ -15,7 +15,7 @@
 - [x] React JS #11 json-server, REST API
 - [x] React JS #12 useEffect, fetch()로 API 호출
 - [x] React JS #13 Custom Hooks
-- [ ] React JS #14 PUT(수정), DELETE(삭제)
+- [x] React JS #14 PUT(수정), DELETE(삭제)
 - [ ] React JS #15 POST(생성), useHistory()
 - [ ] React JS #16 마치며
 - [ ] React JS #17 부록 : 타입스크립트를 적용해보자!
