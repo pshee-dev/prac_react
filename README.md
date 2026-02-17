@@ -11,7 +11,7 @@
 - [x] React JS #7 state, useState
 - [x] React JS #8 props
 - [x] React JS #9 더미 데이터 구현, map() 반복문
-- [ ] React JS #10 라우터 구현 react-router-dom
+- [x] React JS #10 라우터 구현 react-router-dom
 - [ ] React JS #11 json-server, REST API
 - [ ] React JS #12 useEffect, fetch()로 API 호출
 - [ ] React JS #13 Custom Hooks
