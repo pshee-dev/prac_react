@@ -6,10 +6,10 @@ import styles from './App.module.css'
 function App() {
   return (
     <div className="App">
-      {/* 동일한 컴포넌트여도 state는 각각 관리됨 */}
-      <Hello />
-      <Hello />
-      <Hello />
+      <h3>props : properties</h3>
+      <Hello age={10} />
+      <Hello age={20} />
+      <Hello age={30} />
     </div>
   );
 }
