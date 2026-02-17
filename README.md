@@ -73,3 +73,18 @@
     navigate(-1);             // 뒤로 가기
     navigate("/about", { replace: true }); // replace
     ```
+
+### #16 day 이동 버튼 추가
+- React 이벤트에서는 "함수 참조"를 넘겨야 하며, "실행 결과"를 넘기면 안됨
+
+    ```js
+    onClick={dayDelete}             // ⭕
+    onClick={() => moveDay("prev")} // ⭕ 
+    onClick={dayDelete()}           // ❌
+    ```
+
+    | 상황          | 작성 방법                     |
+    | ----------- | ------------------------- |
+    | 매개변수 없음     | `onClick={fn}`            |
+    | 매개변수 있음     | `onClick={() => fn(arg)}` |
+    | 함수 실행 결과 전달 | ❌ 절대 금지             |

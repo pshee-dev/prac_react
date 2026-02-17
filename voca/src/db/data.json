@@ -13,8 +13,8 @@
       "day": 3
     },
     {
-      "id": "9f76",
-      "day": 5
+      "id": "8ca8",
+      "day": 4
     }
   ],
   "words": [
@@ -58,13 +58,6 @@
       "day": 2,
       "eng": "house",
       "kor": "집",
-      "isDone": false
-    },
-    {
-      "id": "258e",
-      "day": 5,
-      "eng": "hi",
-      "kor": "안녕",
       "isDone": false
     },
     {

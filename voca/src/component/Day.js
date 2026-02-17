@@ -5,7 +5,8 @@ import useFetch from '../hooks/useFetch';
 export default function Day() {
     const { day } = useParams();
     const words = useFetch(`http://localhost:3001/words?day=${day}`)
-    const curDay = useFetch("http://localhost:3001/days").find(curDay => {
+    const days = useFetch("http://localhost:3001/days")
+    const curDay = days.find(curDay => {
         return curDay.day === Number(day)
     });
     const navigate = useNavigate();
@@ -23,8 +24,28 @@ export default function Day() {
         }
     }
 
+    function moveDay(to) {
+        if(to === "prev") {
+            if(Number(day) === 1) {
+                navigate(`/day/${days.length}`)
+            } else {
+                navigate(`/day/${Number(day)-1}`)
+            }
+        } else {
+            if(Number(day) === days.length) {
+                navigate(`/day/1`)
+            } else {
+                navigate(`/day/${Number(day)+1}`)
+            }
+        }
+    }
+
     return (
         <>  
+            <div className="arrow_btn">
+                <button className="arrow prev" onClick={() => moveDay("prev")}>←</button>
+                <button className="arrow next" onClick={() => moveDay("next")}>→</button>
+            </div>
             <div style={{
                 display: 'flex',
                 justifyContent: 'space-between',

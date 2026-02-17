@@ -130,3 +130,24 @@ button {
   height: 40px;
   font-size: 20px;
 }
+
+.arrow_btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow {
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
