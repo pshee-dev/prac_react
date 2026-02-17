@@ -70,6 +70,20 @@
       "eng": "hi",
       "kor": "안녕",
       "isDone": false
+    },
+    {
+      "id": "0edd",
+      "day": 3,
+      "eng": "word",
+      "kor": "단어",
+      "isDone": false
+    },
+    {
+      "id": "035f",
+      "day": 1,
+      "eng": "banana",
+      "kor": "바나나",
+      "isDone": false
     }
   ]
 }
