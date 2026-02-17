@@ -14,7 +14,7 @@
 - [x] React JS #10 라우터 구현 react-router-dom
 - [x] React JS #11 json-server, REST API
 - [x] React JS #12 useEffect, fetch()로 API 호출
-- [ ] React JS #13 Custom Hooks
+- [x] React JS #13 Custom Hooks
 - [ ] React JS #14 PUT(수정), DELETE(삭제)
 - [ ] React JS #15 POST(생성), useHistory()
 - [ ] React JS #16 마치며
