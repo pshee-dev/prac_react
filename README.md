@@ -16,7 +16,7 @@
 - [x] React JS #12 useEffect, fetch()로 API 호출
 - [x] React JS #13 Custom Hooks
 - [x] React JS #14 PUT(수정), DELETE(삭제)
-- [ ] React JS #15 POST(생성), useHistory()
+- [x] React JS #15 POST(생성), useHistory()
 - [ ] React JS #16 마치며
 - [ ] React JS #17 부록 : 타입스크립트를 적용해보자!
 
@@ -59,4 +59,17 @@
 
         fetchData();
     }, [id]);
+    ```
+
+### #15 useHistory → useNavigate
+- React Router v6 부터 `useHistory` 삭제 → `useNavigate`로 대체됨
+
+    ```javascript
+    import { useNavigate } from "react-router-dom";
+
+    const navigate = useNavigate();
+
+    navigate("/home");        // push
+    navigate(-1);             // 뒤로 가기
+    navigate("/about", { replace: true }); // replace
     ```
