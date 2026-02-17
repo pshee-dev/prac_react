@@ -18,7 +18,7 @@
 - [x] React JS #14 PUT(수정), DELETE(삭제)
 - [x] React JS #15 POST(생성), useHistory()
 - [x] React JS #16 마치며
-- [ ] React JS #17 부록 : 타입스크립트를 적용해보자!
+- [x] React JS #17 부록 : 타입스크립트를 적용해보자!
 
 ---
 
@@ -88,3 +88,16 @@
     | 매개변수 없음     | `onClick={fn}`            |
     | 매개변수 있음     | `onClick={() => fn(arg)}` |
     | 함수 실행 결과 전달 | ❌ 절대 금지             |
+
+### #17 TypeScript
+- TypeScript 설치
+
+    ```bash
+    npm install typescript @types/node @types/jest
+    ```
+    - React 18+ 부터는 `@types/react`, `@types/react-dom` 설치 X (Vite 최신 환경 기준, CRA 환경에서는 필요함)
+    - React Router v6+ 부터는 `@types/react-router-dom` 설치 X
+    - `tsconfig.json` 파일 필요 (TypeScript가 JSX를 이해하고, 파일을 검사하고, 모듈을 해석하도록 설정하는 필수 구성 파일)
+
+- js 파일 → `.ts`<br>
+jsx 파일 → `.tsx`

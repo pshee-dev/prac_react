@@ -5,7 +5,7 @@ export default function CreateDay() {
     const days = useFetch("http://localhost:3001/days");
     const navigate = useNavigate();
 
-    function onSubmit(e) {
+    function onSubmit(e: React.FormEvent) {
         e.preventDefault();
         
         fetch(`http://localhost:3001/days`, {

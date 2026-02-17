@@ -1,11 +1,16 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import Word from './Word';
+import Word, { IWord } from './Word';
 import useFetch from '../hooks/useFetch';
 
+export interface IDay {
+    id: number,
+    day: number
+}
+
 export default function Day() {
-    const { day } = useParams();
-    const words = useFetch(`http://localhost:3001/words?day=${day}`)
-    const days = useFetch("http://localhost:3001/days")
+    const { day } = useParams<{ day: string }>();
+    const words: IWord[] = useFetch(`http://localhost:3001/words?day=${day}`)
+    const days: IDay[] = useFetch("http://localhost:3001/days")
     const curDay = days.find(curDay => {
         return curDay.day === Number(day)
     });
@@ -24,7 +29,7 @@ export default function Day() {
         }
     }
 
-    function moveDay(to) {
+    function moveDay(to: string) {
         if(to === "prev") {
             if(Number(day) === 1) {
                 navigate(`/day/${days.length}`)
