@@ -12,10 +12,27 @@
 - [x] React JS #8 props
 - [x] React JS #9 더미 데이터 구현, map() 반복문
 - [x] React JS #10 라우터 구현 react-router-dom
-- [ ] React JS #11 json-server, REST API
+- [x] React JS #11 json-server, REST API
 - [ ] React JS #12 useEffect, fetch()로 API 호출
 - [ ] React JS #13 Custom Hooks
 - [ ] React JS #14 PUT(수정), DELETE(삭제)
 - [ ] React JS #15 POST(생성), useHistory()
 - [ ] React JS #16 마치며
 - [ ] React JS #17 부록 : 타입스크립트를 적용해보자!
+
+---
+
+## Notes
+
+### #11 json-server
+- json-server 설치
+
+    ```bash
+    npm install -g json-server
+    ```
+
+- json-server 실행 (json 경로, port 지정)
+
+    ```bash
+    json-server --watch ./src/db/data.json --port 3001
+    ```
