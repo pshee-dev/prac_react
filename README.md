@@ -13,7 +13,7 @@
 - [x] React JS #9 더미 데이터 구현, map() 반복문
 - [x] React JS #10 라우터 구현 react-router-dom
 - [x] React JS #11 json-server, REST API
-- [ ] React JS #12 useEffect, fetch()로 API 호출
+- [x] React JS #12 useEffect, fetch()로 API 호출
 - [ ] React JS #13 Custom Hooks
 - [ ] React JS #14 PUT(수정), DELETE(삭제)
 - [ ] React JS #15 POST(생성), useHistory()
@@ -35,4 +35,28 @@
 
     ```bash
     json-server --watch ./src/db/data.json --port 3001
+    ```
+
+### #12 useEffect
+- 렌더링 이후 실행되는 effect 처리
+- 실행 순서: 렌더링 → DOM 반영 → useEffect 실행
+- useEffect() 두번째 인자로 의존성 배열을 가짐<br>
+    `useEffect(() => {}, [dependencies])`
+    - 의존성 없음: 모든 렌더링 후 실행
+    - 빈 배열: 마운트 시 1번 실행, 언마운트 시 cleanup 실행
+    - 배열 값 포함: 배열의 변수가 바뀔 때마다 실행  
+- fetch data
+
+    ```javascript
+    import { useEffect, useState } from 'react';
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const res = await fetch(`/api/${id}`);
+            const data = await res.json();
+            setData(data);
+        };
+
+        fetchData();
+    }, [id]);
     ```
